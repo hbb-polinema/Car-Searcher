@@ -2,18 +2,18 @@
 Project College | Informatics Master Degree | Institute of Technology Bandung - http://www.itb.ac.id
 
 # Clustering Image [Concept]
-total image 390
+Dataset: 390 images
 
-step 1: Color Quantization with KMeans clustering
-step 2: use ColorDescriptor with HSV region-histogram based
+Step 1: Color Quantization with KMeans clustering<br>
+Step 2: Use ColorDescriptor with HSV region-histogram based
 
-Color
-histogram:  feature
-region-1 >> 288 --> get 50 center
-region-2 >> 288 --> get 50 center
-region-3 >> 288 --> get 50 center
-region-4 >> 288 --> get 50 center
-region-5 >> 288 --> get 50 center
-				total	250 feature-center
+Color<br>
+histogram:  feature<br>
+region-1 >> 288 --> get 50 center<br>
+region-2 >> 288 --> get 50 center<br>
+region-3 >> 288 --> get 50 center<br>
+region-4 >> 288 --> get 50 center<br>
+region-5 >> 288 --> get 50 center<br>
+Features Center Total:	250 feature-center
 
-390 image x 250 feature-center = 97,500 features-vector (Dimension: 390 rows x 250 cols)
+<b>390 image x 250 feature-center = 97,500 features-vector (Dimension: 390 rows x 250 cols)</b>
