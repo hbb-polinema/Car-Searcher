@@ -1,7 +1,4 @@
-# Car-Searcher
-Project College | Informatics Master Degree | Institute of Technology Bandung - http://www.itb.ac.id
-
-# Clustering Image [Concept]
+clustering image:
 total image 390
 
 step 1: Color Quantization with KMeans clustering
