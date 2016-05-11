@@ -14,3 +14,6 @@ region-5 >> 288 --> get 50 center
 				total	250 feature-center
 
 390 image x 250 feature-center = 97,500 features-vector (Dimension: 390 rows x 250 cols)
+
+Color --> Region --> Cluster
+Shape --> ???

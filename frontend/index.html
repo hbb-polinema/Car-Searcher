@@ -25,10 +25,47 @@
 					<header id="header">
 						<h1>Car Searcher</h1>
                         <p>search simillar photo car with your own gallery photo.</p><hr>
-						<p class="icons"><form action="/search_result" method="post" enctype="multipart/form-data">
-  							Select an image:
-  							<input type="file" name="image" />
-			  				<input type="submit" value="Start Searching" class="icon fa-instagram" /></form></p>
+                        <!-- Form Input Query, Relevance Feedback -->
+                        <form action="/search_result" method="post" enctype="multipart/form-data">
+                       	<label>Select an image:</label>
+                        <input type="file" name="image" required/>
+                        <select id="opsi_relevance" name="opsiR" required>
+                        		<option value="" disabled selected>Select Relevance</option>
+							 	<option value="1">Color Dominants</option>
+	 							<option value="2">Shape Dominants</option>
+	 					</select>
+                        
+                        <div id="showRelevance">
+                        	<div class="optionRelevance" id="R1">
+                            	<select id="region" name="region" required>
+                                   	<option value="" disabled selected>Select Region</option>
+							 		<option value="1">All - 5 Region</option>
+	 								<option value="2">Center Region Only</option>
+	 							</select>
+                            </div>
+                            <div class="optionRelevance" id="clusterAllRegion">
+	                            <select id="opsiClusterAllRegion" name="opsiClusterAllRegion" required>
+                                   	<option value="" disabled selected>Select Clustering</option>
+							 		<option value="1">No Clustering</option>
+	 								<option value="35">35 Centroid</option>
+                                    <option value="50">50 Centroid</option>
+                                    <option value="250">250 Centroid</option>
+	 							</select>
+                            </div>
+                            <div class="optionRelevance" id="clusterCenterRegion">
+	                            <select id="opsiClusterCenterRegion" name="opsiClusterCenterRegion" required>
+                                   	<option value="" disabled selected>Select Clustering</option>
+							 		<option value="1">No Clustering</option>
+	 								<option value="50">50 Centroid</option>
+                                    <option value="100">100 Centroid</option>
+                                    <option value="150">150 Centroid</option>
+	 							</select>
+                            </div>
+                            <div class="optionRelevance" id="R2">
+                            	<h4>content Shape</h4>
+                            </div>
+                        </div>
+			  				<input type="submit" value="Start Searching"/></form>
 					</header>
 <hr>
 				<!-- Thumbnail -->
@@ -117,6 +154,29 @@
 			<script src="frontend/assets/js/skel.min.js"></script>
 			<!--[if lte IE 8]><script src="frontend/assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="frontend/assets/js/main.js"></script>
+            <script>
+				$(function(){
+					$(".optionRelevance").hide();
+					
+					$("#opsi_relevance").change(function(){
+						var val = $("#opsi_relevance").val();
+						$(".optionRelevance").hide();
+						$("#R"+val).show();
+						});
+						
+					$("#region").change(function(){
+						var val = $("#region").val();
+						if(val == 1){
+							$("#clusterAllRegion").show();
+							$("#clusterCenterRegion").hide();
+							}
+						if(val == 2){
+							$("#clusterCenterRegion").show();
+							$("#clusterAllRegion").hide();
+							}
+						});
+					});
+            </script>
 
 	</body>
 </html>

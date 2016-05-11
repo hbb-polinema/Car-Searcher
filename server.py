@@ -49,10 +49,19 @@ def searchQuery(Q):
 	print("\n--- Estimated time execution: %s seconds ---" % time_exec)
 	
 	return results, info_car, time_exec
+
+def Color_Dominants():
+	# Color Dominants process
+	return None
 	
 @route('/search_result', method='POST')
 def do_upload():
 	upload = request.files.get('image')
+	opsiR = request.forms.get('opsiR')
+	region = request.forms.get('region')
+	opsiClusterAllRegion = request.forms.get('opsiClusterAllRegion')
+	opsiClusterCenterRegion = request.forms.get('opsiClusterCenterRegion')
+	print 'opsiR: ',opsiR,' region: ',region,' opsiClusterAllRegion: ',opsiClusterAllRegion,' opsiClusterCenterRegion: ',opsiClusterCenterRegion
 	
 	# Check file extension allow or not
 	name, ext = os.path.splitext(upload.filename)
@@ -73,8 +82,25 @@ def do_upload():
 	# search query image
 	bestMatch, infocar, time_exec = searchQuery(upload.filename)
 	
+	if opsiR is '1':
+		
+		# Color Dominants process
+		if region is '1': # All - 5 Region
+			if opsiClusterAllRegion is '1': # No Clustering
+				# without centroid
+				fileIndex = 'indexcar.csv'
+			elif opsiClusterAllRegion is not None: # Clustering with Centroid
+				# Clustering with Centroid
+				fileIndex = 'index_clustering_{centroid}.csv'.format(centroid=int(opsiClusterAllRegion))
+		
+		elif region is '2': # Center Region only
+			
+			
+	elif opsiR is '2':
+		# Shape Dominants process
+	
 	# show result page
 	return template('./frontend/result', bestMatch=bestMatch, infocar=infocar, time_exec=time_exec, query=upload.filename)
 
 if __name__ == '__main__':
-    run(host='0.0.0.0', port=80, debug=False, reloader=False)
+    run(host='0.0.0.0', port=80, debug=True, reloader=True)

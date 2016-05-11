@@ -4,7 +4,7 @@ Project College | Informatics Master Degree | Institute of Technology Bandung - 
 # Clustering Image [Concept]
 total image 390
 
-step 1: Color Quantization with KMeans clustering
+step 1: Color Quantization with KMeans clustering - Distance?
 step 2: use ColorDescriptor with HSV region-histogram based
 
 Color
@@ -17,3 +17,11 @@ region-5 >> 288 --> get 50 center
 				total	250 feature-center
 
 390 image x 250 feature-center = 97,500 features-vector (Dimension: 390 rows x 250 cols)
+
+
+# Relevance Feedback
+Color Dominant
+Shape (CEDD - Lire)
+
+Maker
+Year

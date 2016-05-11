@@ -197,21 +197,36 @@ def test():
 if __name__ == '__main__':
     test()
 '''
+
+
 from module.clustering import Clustering
 import cv2
-import numpy
+import numpy as np
 
-K = 10
-C = Clustering(K)
+#K = 10
+#C = Clustering(K)
 
 image = cv2.imread('queries/q5.jpg')
+new_img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+
+# grab the dimensions and compute the center of the image
+(h, w) = image.shape[:2]
+(cX, cY) = (int(w * 0.5), int(h * 0.5))
+
+# construct an elliptical mask representing the center of the image
+(axesX, axesY) = (int(w * 0.75) / 2, int(h * 0.75) / 2)
+ellipMask = np.zeros(image.shape[:2], dtype = "uint8")
+cv2.ellipse(ellipMask, (cX, cY), (axesX, axesY), 0, 0, 360, 255, -1)
+print type(ellipMask)
+
+'''
 new_img = C.color_quantization_kmeans(image)
 features = C.cal_region_hist(new_img)
 
 print 'Number of Clustering: ', K
 print 'Features:\n', features, '\n Len(features): ', len(features),'\n Unique Features:\n', numpy.unique(features)
 print '\n len(unique features): \n', len(numpy.unique(features))
-
+'''
 cv2.imshow('Original', image)
 cv2.imshow('Result', new_img)
 cv2.waitKey(0)
