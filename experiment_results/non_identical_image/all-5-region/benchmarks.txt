@@ -1,0 +1,66 @@
+###no-clustering###
+10 Best Matching Result for Query:  q_20160512-201001.jpg
+
+1 .      Score:  4.0027511174            | image:  87_mclaren_p1_2014_side.jpg
+2 .      Score:  4.7864875505            | image:  87_mclaren_p1_2014_rear.jpg
+3 .      Score:  4.86560712849           | image:  43_ferrari_laferrari_2015_side.jpg
+4 .      Score:  5.18923433947           | image:  82_lotus_exige_s_2011_side.jpg
+5 .      Score:  5.28729636983           | image:  87_mclaren_p1_2014_front.jpg
+6 .      Score:  5.34819951526           | image:  62_koenigsegg_agera_r_2012_side.jpg
+7 .      Score:  5.40025712244           | image:  56_jaguar_c_x75_2012_rear.jpg
+8 .      Score:  5.54361292262           | image:  56_jaguar_c_x75_2012_front.jpg
+9 .      Score:  5.55869535972           | image:  112_renault_clio_rs200_2014_side.jpg
+10 .     Score:  5.57969746423           | image:  82_lotus_exige_s_2011_rear.jpg
+
+--- Estimated time execution: 4.915 seconds ---
+
+
+###35-centroid###
+10 Best Matching Result for Query:  q_20160512-201321.jpg
+
+1 .      Score:  2.39049048836           | image:  109_porsche_993_1995_rear.jpg
+2 .      Score:  2.71078477423           | image:  95_mercedes_benz_slr_stirling_moss_2009_rear.jpg
+3 .      Score:  2.78008580171           | image:  77_land_rover_range_rover_evoque_2011_front.jpg
+4 .      Score:  2.79648333063           | image:  22_bmw_m6_2015_side.jpg
+5 .      Score:  2.8412213255            | image:  107_porsche_918_spyder_2015_front.jpg
+6 .      Score:  2.86241348275           | image:  17_bentley_arnage_2009_rear.jpg
+7 .      Score:  2.89167592514           | image:  23_bmw_z4_2015_front.jpg
+8 .      Score:  2.9197454711            | image:  107_porsche_918_spyder_2015_side.jpg
+9 .      Score:  2.93807521575           | image:  56_jaguar_c_x75_2012_front.jpg
+10 .     Score:  2.94714023978           | image:  71_lamborghini_gallardo_lp570_4_superleggera_2011_front.jpg
+
+--- Estimated time execution: 1.484 seconds ---
+
+
+###50-centroid###
+10 Best Matching Result for Query:  q_20160512-201538.jpg
+
+1 .      Score:  2.57855480023           | image:  13_audi_a5_coupe_2012_side.jpg
+2 .      Score:  2.96890892151           | image:  19_bentley_mulsanne_speed_2015_rear.jpg
+3 .      Score:  2.97966288115           | image:  56_jaguar_c_x75_2012_rear.jpg
+4 .      Score:  3.03251502975           | image:  117_spyker_c8_aileron_2008_front.jpg
+5 .      Score:  3.14508319357           | image:  11_aston_martin_lagonda_2016_rear.jpg
+6 .      Score:  3.16516393373           | image:  84_maybach_exelero_2005_rear.jpg
+7 .      Score:  3.22435871986           | image:  113_rimac_concept_one_2013_front.jpg
+8 .      Score:  3.24939758263           | image:  45_fiat_500_2014_front.jpg
+9 .      Score:  3.36536628044           | image:  63_koenigsegg_cc8s_2002_rear.jpg
+10 .     Score:  3.4364027722            | image:  28_chevrolet_corvette_c7_stingray_2014_side.jpg
+
+--- Estimated time execution: 1.082 seconds ---
+
+
+###250-centroid###
+10 Best Matching Result for Query:  q_20160512-201740.jpg
+
+1 .      Score:  3.7093110287            | image:  103_pagani_zonda_c12_1999_rear.jpg
+2 .      Score:  3.77437494854           | image:  58_jaguar_xfr_s_2014_rear.jpg
+3 .      Score:  3.87050725389           | image:  12_aston_martin_vulcan_2016_rear.jpg
+4 .      Score:  3.92215930787           | image:  52_hennessey_venom_gt_2011_rear.jpg
+5 .      Score:  3.9402588187            | image:  89_mercedes_benz_cl600_2001_side.jpg
+6 .      Score:  3.95057411076           | image:  126_toyota-land_cruiser_2010_rear.jpg
+7 .      Score:  4.08252821781           | image:  13_audi_a5_coupe_2012_front.jpg
+8 .      Score:  4.12613027567           | image:  104_pagani_zonda_cinque_2009_rear.jpg
+9 .      Score:  4.18497514474           | image:  69_lamborghini_egoista_2013_rear.jpg
+10 .     Score:  4.21812055585           | image:  103_pagani_zonda_c12_1999_front.jpg
+
+--- Estimated time execution: 1.683 seconds ---

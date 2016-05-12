@@ -21,8 +21,8 @@ Features Center Total:	250 feature-center<br>
 
 
 # Relevance Feedback
-Color Dominant
-Shape (CEDD - Lire)
+Color Dominant<br>
+Shape (CEDD - Lire)<br>
 
-Maker
+Maker<br>
 Year

@@ -1,0 +1,70 @@
+###no-clustering###
+
+10 Best Matching Result for Query:  q_20160512-202008.jpg
+
+1 .      Score:  0.587555378111                  | image:  36_ferrari_458_italia_2009_side.jpg
+2 .      Score:  0.760954283355                  | image:  43_ferrari_laferrari_2015_front.jpg
+3 .      Score:  0.910701193302                  | image:  87_mclaren_p1_2014_rear.jpg
+4 .      Score:  0.952316047886                  | image:  56_jaguar_c_x75_2012_front.jpg
+5 .      Score:  0.967447130332                  | image:  56_jaguar_c_x75_2012_side.jpg
+6 .      Score:  0.97839019131           | image:  43_ferrari_laferrari_2015_side.jpg
+7 .      Score:  0.979483375683                  | image:  87_mclaren_p1_2014_side.jpg
+8 .      Score:  1.04625759388           | image:  87_mclaren_p1_2014_front.jpg
+9 .      Score:  1.04775748799           | image:  62_koenigsegg_agera_r_2012_side.jpg
+10 .     Score:  1.06420569811           | image:  100_nissan_gt_r_2009_rear.jpg
+
+--- Estimated time execution: 2.295 seconds ---
+
+
+###36-centroid###
+
+10 Best Matching Result for Query:  q_20160512-202454.jpg
+
+1 .      Score:  0.48422624594           | image:  70_lamborghini_gallardo_lp560-4_2014_side.jpg
+2 .      Score:  0.706779562417                  | image:  52_hennessey_venom_gt_2011_front.jpg
+3 .      Score:  0.732887178974                  | image:  111_renault_alpine_a_110_50_concept_2012_rear.jpg
+4 .      Score:  0.741066470529                  | image:  14_audi_r8_v10_2016_side.jpg
+5 .      Score:  0.768221432434                  | image:  54_infiniti_q60_side.jpg
+6 .      Score:  0.775289576107                  | image:  35_ferrari_360_spider_2001_side.jpg
+7 .      Score:  0.794925113269                  | image:  13_audi_a5_coupe_2012_rear.jpg
+8 .      Score:  0.799357876627                  | image:  74_lamborghini_sesto_elemento_2011_front.jpg
+9 .      Score:  0.813143513606                  | image:  82_lotus_exige_s_2011_front.jpg
+10 .     Score:  0.83210813348           | image:  69_lamborghini_egoista_2013_rear.jpg
+
+--- Estimated time execution: 1.538 seconds ---
+
+
+###72-centroid###
+
+10 Best Matching Result for Query:  q_20160512-202714.jpg
+
+1 .      Score:  1.04424263633           | image:  12_aston_martin_vulcan_2016_rear.jpg
+2 .      Score:  1.15247851766           | image:  48_ford_gt_2017_front.jpg
+3 .      Score:  1.17557216112           | image:  70_lamborghini_gallardo_lp560-4_2014_rear.jpg
+4 .      Score:  1.21137857741           | image:  61_jaguar_xkr_2001_front.jpg
+5 .      Score:  1.21957812847           | image:  85_mclaren_f1_1993_front.jpg
+6 .      Score:  1.29493067645           | image:  52_hennessey_venom_gt_2011_front.jpg
+7 .      Score:  1.30641085284           | image:  4_alfa_romeo_156gta_2004_front.jpg
+8 .      Score:  1.31764480814           | image:  81_lexus_rc_2015_rear.jpg
+9 .      Score:  1.32009573895           | image:  99_nissan_370z_2013_side.jpg
+10 .     Score:  1.33933857404           | image:  2_acura_nsx_2016_front.jpg
+
+--- Estimated time execution: 1.102 seconds ---
+
+
+###144-centroid###
+
+10 Best Matching Result for Query:  q_20160512-202940.jpg
+
+1 .      Score:  1.16749665267           | image:  93_mercedes_benz_s_class_2006_side.jpg
+2 .      Score:  1.2716331126            | image:  80_lexus_lfa_2011_rear.jpg
+3 .      Score:  1.29729308725           | image:  42_ferrari_f430_2005_side.jpg
+4 .      Score:  1.39901540559           | image:  103_pagani_zonda_c12_1999_front.jpg
+5 .      Score:  1.46932916184           | image:  125_toyota_fortuner_2016_side.jpg
+6 .      Score:  1.46957005828           | image:  37_ferrari_550_barchetta_2001_side.jpg
+7 .      Score:  1.47256015359           | image:  89_mercedes_benz_cl600_2001_rear.jpg
+8 .      Score:  1.48061778725           | image:  100_nissan_gt_r_2009_side.jpg
+9 .      Score:  1.49444362983           | image:  86_mclaren_mp4_12c_2011_front.jpg
+10 .     Score:  1.51918388393           | image:  43_ferrari_laferrari_2015_rear.jpg
+
+--- Estimated time execution: 1.253 seconds ---

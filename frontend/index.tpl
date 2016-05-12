@@ -25,6 +25,34 @@
 					<header id="header">
 						<h1>Car Searcher</h1>
                         <p>search simillar photo car with your own gallery photo.</p><hr>
+                        <table align="center" width="100%">
+                        <tr>
+                        <td>
+						<select name="tahun_min">
+                        	<option value="" disabled selected>Min Year</option>
+						% for tahun in year:
+							<option value="{{tahun}}">{{tahun}}</option>
+						% end
+						</select>
+                        </td>
+                        <td><h2> - </h2></td>
+                        <td>
+						<select name="tahun_max">
+                        	<option value="" disabled selected>Max Year</option>
+						% for tahun in year:
+							<option value="{{tahun}}">{{tahun}}</option>
+						% end
+						</select>
+                        </td>
+                        </tr>
+                        </table>						
+						<select name="maker">
+                        	<option value="" disabled selected>Select Maker</option>
+						% for pembuat in maker:
+							<option value="{{pembuat}}">{{pembuat}}</option>
+						% end
+						</select>
+						
                         <!-- Form Input Query, Relevance Feedback -->
                         <form action="/search_result" method="post" enctype="multipart/form-data">
                        	<label>Select an image:</label>
@@ -99,7 +127,7 @@
 						<article>
 							<a class="thumbnail" href="/datacars/51_gumpert-apollo_2008_front.jpg"><img src="/datacars/51_gumpert-apollo_2008_front.jpg" alt="" /></a>
 							<h2>Apollo</h2>
-							<p style="background-color:#000;">Supercar | £ 275,000 | 2008 | Gumpert | Germany</p>
+							<p style="background-color:#000;">Supercar | � 275,000 | 2008 | Gumpert | Germany</p>
 						</article>
 						<article>
 							<a class="thumbnail" href="/datacars/52_hennessey_venom_gt_2011_front.jpg"><img src="/datacars/52_hennessey_venom_gt_2011_front.jpg" alt="" /></a>
@@ -124,7 +152,7 @@
 						<article>
 							<a class="thumbnail" href="/datacars/15_audi_tts_coupe_2009_side.jpg"><img src="/datacars/15_audi_tts_coupe_2009_side.jpg" alt="" /></a>
 							<h2>R8 V10</h2>
-							<p style="background-color:#000;">Sports coupe | € 165,000 | 2016 | Audi | Germany</p>
+							<p style="background-color:#000;">Sports coupe | � 165,000 | 2016 | Audi | Germany</p>
 						</article>
 						<article>
 							<a class="thumbnail" href="/datacars/95_mercedes_benz_slr_stirling_moss_2009_front.jpg"><img src="/datacars/95_mercedes_benz_slr_stirling_moss_2009_front.jpg" alt="" /></a>

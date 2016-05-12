@@ -51,6 +51,6 @@ output.close()
 # Result estimated time
 print("\n--- Estimated time execution: %s seconds ---" % round(time.time() - start_time, 4))
 
-# --- Estimated time execution: 560.427 seconds --- 20:09 - 08/05/2016 250 features-center/image - 50 features/region - 5 region
-# --- Estimated time execution: 176.922 seconds --- 21:01 - 08/05/2016 50 features-center/image - 10 features/region - 5 region
-# --- Estimated time execution: 150.203 seconds --- 21:28 - 08/05/2016 35 features-center/image - 7 features/region - 5 region
+# --- Estimated time execution: 159.398 seconds --- 20:09 - 08/05/2016 250 features-centroid/image - 50 features/region - 5 region
+# --- Estimated time execution: 151.567 seconds --- 21:01 - 08/05/2016 50 features-centroid/image - 10 features/region - 5 region
+# --- Estimated time execution: 152.339 seconds --- 21:28 - 08/05/2016 35 features-centroid/image - 7 features/region - 5 region

@@ -1,5 +1,6 @@
 # import the necessary packages
 import numpy as np
+import math
 import csv
 
 class Searcher:
@@ -73,4 +74,12 @@ class Searcher:
 			for (a, b) in zip(histA, histB)])
 
 		# return the chi-squared distance
+		return d
+	
+	def euclidean_dist(self, histA, histB):
+		# compute the euclidean distance
+		d = [(a - b)**2 for a,b in zip(histA, histB)]
+		d = math.sqrt(sum(d))
+		
+		# return the euclidean distance
 		return d

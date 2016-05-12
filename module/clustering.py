@@ -8,7 +8,7 @@ class Clustering:
 		# store number of clustering per image
 		self.Ncluster = Ncluster
 	
-	def color_quantization_kmeans(self, image):
+	def color_quantization_kmeans(self, image, quantify=7):
 		# reshape image to converted purpose
 		data = image.reshape((-1,3))
 
@@ -21,7 +21,7 @@ class Clustering:
 		# cv2.kmeans(data, K, bestLabels, criteria,
 		# attempts(Flag to specify the number of times the algorithm is executed using different initial labellings),
 		# flags[, centers]) --> retval(compactness), bestLabels, centers
-		ret,label,center = cv2.kmeans(data, self.Ncluster, None, criteria, 10, cv2.KMEANS_RANDOM_CENTERS)
+		ret,label,center = cv2.kmeans(data, quantify, None, criteria, 10, cv2.KMEANS_RANDOM_CENTERS)
 		
 		# Now convert back into uint8, and make original image
 		center = np.uint8(center)
@@ -30,6 +30,34 @@ class Clustering:
 		
 		# return result image
 		return image
+	
+	def cal_center_region_hist(self, image):
+		# initialize the color descriptor
+		# using 8 Hue bins, 12 Saturation bins, and 3 Value bins
+		cd = ColorDescriptor((8, 12, 3))
+		
+		# convert the image to the HSV color space and initialize
+		# the features used to quantify the image
+		image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+		features = []
+
+		# grab the dimensions and compute the center of the image
+		(h, w) = image.shape[:2]
+		(cX, cY) = (int(w * 0.5), int(h * 0.5))
+
+		# construct an elliptical mask representing the center of the image
+		(axesX, axesY) = (int(w * 0.75) / 2, int(h * 0.75) / 2)
+		ellipMask = np.zeros(image.shape[:2], dtype = "uint8")
+		cv2.ellipse(ellipMask, (cX, cY), (axesX, axesY), 0, 0, 360, 255, -1)
+
+		# extract a color histogram from the elliptical region and
+		# update the feature vector
+		hist = cd.histogram(image, ellipMask)
+		hist = self.kmeans_region_features(hist)
+		features.extend(hist.flatten())
+
+		# return the feature vector
+		return features
 	
 	def cal_region_hist(self, image):
 		# initialize the color descriptor

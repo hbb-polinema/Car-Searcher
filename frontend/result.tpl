@@ -22,14 +22,11 @@
 			<div id="main">
 
 				<!-- Header -->
-					<header id="header">
+					<header id="header">										
 						<h1>10 Best Match Results</h1>
-						<p>Estimated time execution: {{time_exec}} seconds.</p><hr>
-						<p><form action="/search_result" method="post" enctype="multipart/form-data">
-  							Select an image:
-  							<input type="file" name="image" />
-			  				<input type="submit" value="Start Searching" /></form></p><hr>
+                        <label>Estimated time execution: {{time_exec}} seconds.</label><hr>
 						<ul class="icons">
+							<li><a href="/" class="icon fa-home"><span class="label">Home</span></a></li>
 							<li><a href="http://www.twitter.com/habibieeddien" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="http://www.itb.ac.id" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="http://github.com/habibieeddien" class="icon fa-github"><span class="label">Github</span></a></li>
@@ -75,6 +72,5 @@
 			<script src="frontend/assets/js/skel.min.js"></script>
 			<!--[if lte IE 8]><script src="frontend/assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="frontend/assets/js/main.js"></script>
-
 	</body>
 </html>

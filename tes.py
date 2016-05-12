@@ -196,38 +196,72 @@ def test():
 
 if __name__ == '__main__':
     test()
-'''
+
 
 
 from module.clustering import Clustering
+from module.searcher import Searcher
 import cv2
-import numpy as np
+import numpy
 
-#K = 10
-#C = Clustering(K)
+K = 36
+C = Clustering(K)
 
-image = cv2.imread('queries/q5.jpg')
-new_img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+image = cv2.imread('queries/q8.jpg')
+query = cv2.imread('queries/q8.jpg')
 
-# grab the dimensions and compute the center of the image
-(h, w) = image.shape[:2]
-(cX, cY) = (int(w * 0.5), int(h * 0.5))
+#new_img1 = C.color_quantization_kmeans(image)
+features1 = C.cal_center_region_hist(image)
 
-# construct an elliptical mask representing the center of the image
-(axesX, axesY) = (int(w * 0.75) / 2, int(h * 0.75) / 2)
-ellipMask = np.zeros(image.shape[:2], dtype = "uint8")
-cv2.ellipse(ellipMask, (cX, cY), (axesX, axesY), 0, 0, 360, 255, -1)
-print type(ellipMask)
+#new_img2 = C.color_quantization_kmeans(query)
+features2 = C.cal_center_region_hist(query)
 
-'''
-new_img = C.color_quantization_kmeans(image)
-features = C.cal_region_hist(new_img)
+searcher = Searcher('')
+d1 = searcher.euclidean_dist(features1, features2)
+d2 = searcher.chi2_distance(features1, features2)
 
-print 'Number of Clustering: ', K
-print 'Features:\n', features, '\n Len(features): ', len(features),'\n Unique Features:\n', numpy.unique(features)
-print '\n len(unique features): \n', len(numpy.unique(features))
-'''
+print 'Number of Clustering: ', K, 'distance: ',d1, 'chi2_distance: ',d2
+print 'Features1:\n', features1, '\n Len(features1): ', len(features1),'\n Unique Features:\n', numpy.unique(features1)
+print '\n len(unique features): \n', len(numpy.unique(features1))
+
+print 'Features2:\n', features2, '\n Len(features2): ', len(features2),'\n Unique Features:\n', numpy.unique(features2)
+print '\n len(unique features): \n', len(numpy.unique(features2))
+
 cv2.imshow('Original', image)
-cv2.imshow('Result', new_img)
+cv2.imshow('Result', query)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+'''
+import csv
+import numpy
+
+# initialize our dictionary of results
+info_results = {}
+		
+# open the index file for reading
+with open('infocar.csv') as f:
+	# initialize the CSV reader
+	reader = csv.reader(f)
+			
+	for row in reader:
+		info_results[int(row[0])] = row[1:]
+			
+	# close the reader
+	f.close()
+
+year = []
+maker = []
+
+for id in info_results:
+	tahun = info_results[id][3]
+	print type(tahun), tahun
+	
+	if tahun is '2016':
+		year.append(info_results[id][3])
+		maker.append(info_results[id][4])
+
+#y.extend(numpy.unique(year))
+#m.extend(numpy.unique(maker))
+	
+print year,'\n'
+print maker

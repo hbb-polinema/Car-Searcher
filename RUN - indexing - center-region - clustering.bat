@@ -3,7 +3,7 @@ CLS
 
 ECHO Indexing dataset System Starting ...
 
-python index_center_region_clustering.py --dataset datacars --index index_center_region_clustering_50.csv --cluster 50
+python index_center_region_clustering.py --dataset datacars --index index_center_region_clustering_144.csv --cluster 144
 
 ECHO execution completed.
 

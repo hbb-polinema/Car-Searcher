@@ -1,0 +1,68 @@
+###no-clustering###
+
+10 Best Matching Result for Query:  q_20160512-141048.jpg
+
+1 .      Score:  1.15864595695e-12               | image:  65_koenigsegg_ccx_2011_front.jpg
+2 .      Score:  0.726871957824                  | image:  11_aston_martin_lagonda_2016_front.jpg
+3 .      Score:  0.783354887063                  | image:  66_koenigsegg_regera_2016_side.jpg
+4 .      Score:  0.805148509635                  | image:  66_koenigsegg_regera_2016_front.jpg
+5 .      Score:  0.882242362611                  | image:  96_mercedes_benz_sls_amg_2011_front.jpg
+6 .      Score:  0.978272246603                  | image:  109_porsche_993_1995_rear.jpg
+7 .      Score:  1.00212007927           | image:  13_audi_a5_coupe_2012_rear.jpg
+8 .      Score:  1.0461130225            | image:  83_marussia_b2_2012_front.jpg
+9 .      Score:  1.15526597406           | image:  78_lexus_is_350_2014_rear.jpg
+10 .     Score:  1.2188395921            | image:  128_volvo_xc60_2009_rear.jpg
+
+--- Estimated time execution: 3.395 seconds ---
+
+
+###36-centroid###
+10 Best Matching Result for Query:  q_20160512-141326.jpg
+
+1 .      Score:  0.66751894483           | image:  1_acura_nsx_1991_front.jpg
+2 .      Score:  0.685138740943                  | image:  108_porsche_959_1988_side.jpg
+3 .      Score:  0.762372883634                  | image:  121_tesla_model_s_2013_front.jpg
+4 .      Score:  0.826101688067                  | image:  87_mclaren_p1_2014_side.jpg
+5 .      Score:  0.850817233107                  | image:  37_ferrari_550_barchetta_2001_front.jpg
+6 .      Score:  0.857411792703                  | image:  46_fisker_karma_2012_side.jpg
+7 .      Score:  0.880860489386                  | image:  103_pagani_zonda_c12_1999_side.jpg
+8 .      Score:  0.898957964069                  | image:  15_audi_tts_coupe_2009_front.jpg
+9 .      Score:  0.907653512411                  | image:  126_toyota-land_cruiser_2010_front.jpg
+10 .     Score:  0.926603224097                  | image:  60_jaguar_xjr_2014_rear.jpg
+
+--- Estimated time execution: 2.65 seconds ---
+
+
+###72-centroid###
+10 Best Matching Result for Query:  q_20160512-141713.jpg
+
+1 .      Score:  0.526959507993                  | image:  109_porsche_993_1995_side.jpg
+2 .      Score:  0.924158666594                  | image:  36_ferrari_458_italia_2009_rear.jpg
+3 .      Score:  1.06024894279           | image:  75_lamborghini_veneno_2014_side.jpg
+4 .      Score:  1.07644495751           | image:  65_koenigsegg_ccx_2011_front.jpg
+5 .      Score:  1.08375810198           | image:  74_lamborghini_sesto_elemento_2011_rear.jpg
+6 .      Score:  1.10148172304           | image:  97_mini_cooper_roadster_s_2012_rear.jpg
+7 .      Score:  1.13954651659           | image:  72_lamborghini_huracan_lp61_4_2014_front.jpg
+8 .      Score:  1.14864116331           | image:  31_chrysler_crossfire_2007_side.jpg
+9 .      Score:  1.1723135237            | image:  63_koenigsegg_cc8s_2002_side.jpg
+10 .     Score:  1.19597407366           | image:  42_ferrari_f430_2005_rear.jpg
+
+--- Estimated time execution: 3.011 seconds ---
+
+
+###144-centroid###
+ 10 Best Matching Result for Query:  q_20160512-141830.jpg
+
+1 .      Score:  1.20140054176           | image:  105_peugeot_onyx_2012_rear.jpg
+2 .      Score:  1.24009673095           | image:  28_chevrolet_corvette_c7_stingray_2014_side.jpg
+3 .      Score:  1.2728151962            | image:  110_porsche_cayenne_2012_side.jpg
+4 .      Score:  1.27637166165           | image:  80_lexus_lfa_2011_rear.jpg
+5 .      Score:  1.30685523252           | image:  49_ford_gt90_1995_rear.jpg
+6 .      Score:  1.40768667617           | image:  116_spyker_c8_2009_front.jpg
+7 .      Score:  1.41812404915           | image:  116_spyker_c8_2009_side.jpg
+8 .      Score:  1.43023380609           | image:  9_aston_martin_db9_gt_2016_side.jpg
+9 .      Score:  1.46031969541           | image:  59_jaguar_xj220_1992_front.jpg
+10 .     Score:  1.4775303282            | image:  109_porsche_993_1995_side.jpg
+
+--- Estimated time execution: 2.225 seconds ---
+
